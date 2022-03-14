@@ -1,5 +1,5 @@
 import {
-  ContainerPrincipal,
+  ContainerLogin,
   NomeAppPrincipal,
   NomeAppSecundario,
   CampoInput,
@@ -11,7 +11,7 @@ import {
 } from "./styles";
 const Login = () => {
   return (
-    <ContainerPrincipal>
+    <ContainerLogin>
       <MargemNomeApp>
         <NomeAppPrincipal>Fatec</NomeAppPrincipal>
         <NomeAppSecundario> Share</NomeAppSecundario>
@@ -24,7 +24,7 @@ const Login = () => {
         <BotaoEntrar>Entrar</BotaoEntrar>
         <BotaoAbrirConta>Abrir Conta</BotaoAbrirConta>
       </RetanguloLogin>
-    </ContainerPrincipal>
+    </ContainerLogin>
   );
 };
 export default Login;
