@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ContainerLogin = styled.div`
   display: flex;
@@ -59,16 +60,17 @@ export const BotaoEntrar = styled.input`
   font-size: 20px;
 `;
 
-export const BotaoAbrirConta = styled.button`
-  height: 40px;
+export const BotaoAbrirConta = styled(Link)`
+  padding: 10px;
   width: 200px;
   margin-top: 60px;
   margin-left: 100px;
-
+  display: inline-block;
   border: none;
   border-radius: 10px;
   color: white;
   background-color: #00c462;
   font-size: 20px;
   text-align: center;
+  text-decoration: none;
 `;
