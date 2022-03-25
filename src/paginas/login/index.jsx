@@ -39,11 +39,11 @@ const Login = () => {
         </MargemNomeApp>
         <RetanguloLogin>
           <TextoRetangulo>Email</TextoRetangulo>
-          <CampoInput name="email"></CampoInput>
+          <CampoInput name="email" />
           <TextoRetangulo>Senha</TextoRetangulo>
           <CampoInput name="senha" type="password"></CampoInput>
           <BotaoEntrar type="submit" value="Entrar" />
-          <BotaoAbrirConta>Abrir Conta</BotaoAbrirConta>
+          <BotaoAbrirConta to="/cadastro">Abrir Conta</BotaoAbrirConta>
         </RetanguloLogin>
       </ContainerLogin>
     </form>

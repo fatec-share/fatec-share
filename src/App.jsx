@@ -1,7 +1,8 @@
-import Login from "./pages/login";
+import Login from "./paginas/login";
+import PaginaRotas from "./paginas/rotas";
 
 function App() {
-  return <Login />;
+  return <PaginaRotas />;
 }
 
 export default App;
