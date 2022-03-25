@@ -48,7 +48,7 @@ export const CampoInput = styled.input`
   border-radius: 10px;
 `;
 
-export const BotaoEntrar = styled.button`
+export const BotaoEntrar = styled.input`
   height: 30px;
   width: 325px;
   margin-top: 60px;
