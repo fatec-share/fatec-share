@@ -1,76 +1,116 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-export const ContainerLogin = styled.div`
+
+export const LoginContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
-export const MargemNomeApp = styled.div`
-  margin-top: 200px;
+export const LoginEsquerda = styled.div`
+  width: 50vw;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 3vw;
+    color: #77ffc0;
+  }
+
+  img {
+    width: 35vw;
+  }
+
+  @media screen and (max-width: 600px){
+    width:100%;
+    height: auto;
+
+    h1 {
+      display: none;
+    }
+
+    img {
+      width: 35vh;
+      margin-bottom: 10px;
+    }
+  }
 `;
 
-export const NomeAppPrincipal = styled.div`
-  color: #4a555c;
-  font-size: 80px;
-  font-weight: bold;
-  margin-left: 200px;
+export const LoginDireita = styled.div`
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 600px){
+    width:100%;
+    height: 100%;
+  }
 `;
 
-export const NomeAppSecundario = styled.div`
-  color: #b01218;
-  font-size: 80px;
-  font-weight: bold;
-  margin-right: 150px;
+export const LoginCartao = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px #00000056;
+
+  h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  @media (pointer: coarse) {
+    width: auto;
+    height: auto;
+  }
 `;
 
-export const RetanguloLogin = styled.div`
-  border-radius: 10px;
-  border: solid 0.5px #b5b5b5;
-  margin-top: 80px;
-  height: 450px;
-  width: 400px;
+export const LoginCampoTexto = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  input::placeholder {
+    color: #f0ffff94;
+  }
+
+  label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+  }
 `;
 
-export const TextoRetangulo = styled.div`
-  color: #b5b5b5;
-  margin-left: 30px;
-  margin-top: 30px;
-`;
 
-export const CampoInput = styled.input`
-  height: 30px;
-  width: 325px;
-  margin-top: 30px;
-  margin-left: 30px;
-  border: solid 0.5px #b5b5b5;
-  border-radius: 10px;
-`;
-
-export const BotaoEntrar = styled.input`
-  height: 30px;
-  width: 325px;
-  margin-top: 60px;
-  border: none;
-  margin-left: 30px;
-  border-radius: 10px;
-  color: #7d7d7d;
-  font-size: 20px;
-`;
-
-export const BotaoAbrirConta = styled(Link)`
-  padding: 10px;
-  width: 200px;
-  margin-top: 60px;
-  margin-left: 100px;
-  display: inline-block;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background-color: #00c462;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-`;

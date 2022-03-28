@@ -1,53 +1,74 @@
 import styled from "styled-components";
 
-export const ContainerCadastro = styled.div`
+export const CadastroContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+export const CadastroCartao = styled.div`
+  /* position: relative; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px #00000056;
+
+
+  h1 {
+    padding-top: 10px;
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+
+
+  @media (pointer: coarse) {
+    width: auto;
+    height: auto;
+  }
+`;
+
+export const CadastroCampoTexto = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-`;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
 
-export const RetanguloCadastro = styled.div`
-  border-radius: 10px;
-  border: solid 0.5px #b5b5b5;
-  margin-top: 80px;
-  margin-left: 500px;
-  height: 500px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-`;
-export const CampoInputCadastro = styled.input`
-  height: 30px;
-  width: 180px;
-  margin-top: 30px;
-  margin-left: 10px;
-  border: solid 0.5px #b5b5b5;
-  border-radius: 10px;
-`;
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+  }
 
-export const BotaoConfirmacaoCadastro = styled.input`
-  padding: 10px;
-  width: 200px;
-  margin-top: 35px;
-  margin-left: 100px;
-  display: inline-block;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background-color: #00c462;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-`;
+  input::placeholder {
+    color: #f0ffff94;
+  }
 
-export const PaiLinhaInput = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 20px;
-`;
-
-export const NomeCampo = styled.div`
-  margin-left: 30px;
-  margin-top: 35px;
-  color: #b5b5b5;
+  label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+  }
 `;
