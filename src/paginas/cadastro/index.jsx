@@ -1,12 +1,7 @@
-import {
-  CadastroContainer,
-  CadastroCartao,
-  CadastroCampoTexto,
-} from './styles';
+import { CadastroContainer, CadastroCartao, CadastroCampoTexto } from './styles';
 import { Botao } from '../../componentes/Botao';
 import { useNavigate } from 'react-router-dom';
 import { validaFormularioCadastro } from '../../servicos/api';
-
 
 const Cadastro = () => {
   const navegar = useNavigate();
@@ -15,8 +10,7 @@ const Cadastro = () => {
     <form
       onSubmit={(evento) => {
         evento.preventDefault();
-        validaFormularioCadastro(evento);
-        navegar('/');
+        validaFormularioCadastro(evento, navegar);
       }}
     >
       <CadastroContainer>

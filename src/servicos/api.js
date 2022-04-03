@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 import sha512 from 'js-sha512';
 
 // PAGINA LOGIN
@@ -19,10 +19,10 @@ export const validaLogin = async (evento) => {
   } catch (error) {
     alert('Usuário ou senha incorretos!');
   }
-}
+};
 
 // PAGINA CADASTRO
-export const validaFormularioCadastro = async (evento) => {
+export const validaFormularioCadastro = async (evento, navegar) => {
   try {
     if (evento.target.senha.value !== evento.target.repeticaoSenha.value) {
       alert('Senhas divergentes');
