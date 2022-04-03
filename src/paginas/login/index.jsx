@@ -2,8 +2,10 @@ import { LoginContainer, LoginEsquerda, LoginDireita, LoginCartao, LoginCampoTex
 import { Botao } from '../../componentes/Botao';
 import { validaLogin } from '../../servicos/api';
 import share from '../../assets/home/share.svg';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
+  const navegar = useNavigate();
   return (
     <form
       onSubmit={(evento) => {
@@ -31,7 +33,12 @@ export const Login = () => {
               <input type="password" name="senha" placeholder="Senha" autoComplete="off" />
             </LoginCampoTexto>
             <Botao texto="login" primario />
-            <Botao texto="cadastro" href="/cadastro" />
+            <Botao
+              texto="cadastro"
+              onClick={() => {
+                navegar('/cadastro');
+              }}
+            />
           </LoginCartao>
         </LoginDireita>
       </LoginContainer>
