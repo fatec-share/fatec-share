@@ -8,7 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.5.1",
     "axios": "^0.26.1",
     "js-sha512": "^0.8.0",
     "react": "^17.0.2",
