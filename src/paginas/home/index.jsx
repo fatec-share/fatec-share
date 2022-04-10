@@ -1,6 +1,6 @@
 import React from 'react';
 import { BarraDeNavegacao } from '../../componentes/BarraDeNavegacao';
-import { ContainerBarraLateral } from '../../componentes/BarraLateral';
+import { BarraLateral } from '../../componentes/BarraLateral';
 import { ContainerHorizontal, ContainerVertical } from './styles';
 
 export const Home = () => {
@@ -8,7 +8,7 @@ export const Home = () => {
     <ContainerVertical>
       <BarraDeNavegacao />
       <ContainerHorizontal>
-        <ContainerBarraLateral />
+        <BarraLateral />
       </ContainerHorizontal>
     </ContainerVertical>
   );
