@@ -10,7 +10,7 @@ export const Login = () => {
     <form
       onSubmit={(evento) => {
         evento.preventDefault();
-        validaLogin(evento);
+        validaLogin(evento, navegar);
       }}
     >
       <LoginContainer>
