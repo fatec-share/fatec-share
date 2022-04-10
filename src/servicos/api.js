@@ -2,7 +2,7 @@ import axios from 'axios';
 import sha512 from 'js-sha512';
 
 // PAGINA LOGIN
-export const validaLogin = async (evento) => {
+export const validaLogin = async (evento, navegar) => {
   try {
     const stringAleatoria = await axios.post('http://localhost:3001/usuarios/hash2', {
       email: evento.target.email.value,
@@ -15,7 +15,7 @@ export const validaLogin = async (evento) => {
       email: evento.target.email.value,
       segundaHash: segundaHash,
     });
-    alert(`Usuário(a) ${resposta.data.nome} logado(a) com sucesso!`);
+    navegar('/home');
   } catch (error) {
     alert('Usuário ou senha incorretos!');
   }
